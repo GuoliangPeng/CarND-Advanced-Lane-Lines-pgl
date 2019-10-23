@@ -201,3 +201,4 @@ video result](./project_result_video.mp4)
 4.车辆上下颠簸时识别容易跳动  
 5.需要更好的识别车道线转换成二进制图像的算法，并需要加更多的限制条件来保证在二进制图像上拟合车道线的时候更准确。  
 
+注：以前检测车道线方法 :point_right: [这里](https://github.com/GuoliangPeng/CarND-LaneLines-P1-pgl)
