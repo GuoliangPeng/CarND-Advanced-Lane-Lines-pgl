@@ -123,7 +123,7 @@ apply the distortion correction to one of the test images
 like this one:
 ![avatar](./writeup_images/image2.jpg)
 
-#### 2. Describe how (and identify where in my code) I performed a perspective transform and provide an example of a transformed image.
+#### 2. Describe how I performed a perspective transform and provide an example of a transformed image.
 The code for my perspective transform includes
 a function
 called `warper()`.The `warper()` function takes as inputs an image
@@ -148,7 +148,7 @@ the following source and destination points:
 
 对已经失真矫正的弯道图像做透视变换：
 ![avatar](./writeup_images/image4.jpg)
-#### 3. Describe how (and identify where in my code) I used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
+#### 3. Describe how I used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 I used
 a combination of
 color and gradient thresholds to generate a binary image.
@@ -157,14 +157,14 @@ color and gradient thresholds to generate a binary image.
 
 ![avatar](./writeup_images/image5.jpg)
 
-#### 4. Describe how (and identify where in my code) I identified lane-line pixels and fit their positions with a polynomial?
+#### 4. Describe how I identified lane-line pixels and fit their positions with a polynomial.
 首先在单帧图像中识别出车道线，从图像底部往上滑动窗口寻找合适的拟合点，最后结果像这样：
 ![avatar](./writeup_images/image6.jpg)
 
 然后通过前一帧已识别出车道线的图像在帧与帧之间搜索并拟合车道线，结果像这样：
 ![avatar](./writeup_images/image7.jpg)
 
-#### 5. Describe how (and identify where in my code) 
+#### 5. Descriptive correlation calculation 
 I calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 I did this in cells #30# in my
 code in
@@ -183,13 +183,13 @@ code in
 
 ### Pipeline (video)
 
-#### 1.Provide a link to my final video output.  My pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
+#### Provide a link to my final video output.  My pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 Here's a [link to my
 video result](./project_result_video.mp4)
 
 ### Discussion
 
-#### 1. Briefly discuss any problems / issues I faced in my implementation of this project. Where will my pipeline likely fail?  What could I  do to make it more robust?
+#### Briefly discuss any problems / issues I faced in my implementation of this project. Where will my pipeline likely fail?  What could I  do to make it more robust?
 1.在阳光强烈的地方，车道线不容易辨认  
 2.从树荫到阳光下，车道线追踪容易失误  
 3.容易误识别到护栏以及到路边的明暗交界线当作车道线边缘  
