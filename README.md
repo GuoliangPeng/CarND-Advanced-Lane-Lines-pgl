@@ -1,4 +1,9 @@
-## Advanced Lane Finding
+# Advanced Lane Finding
+
+**Final output video:**
+
+![GIF-project_result_video](./GIF-project_result_video.gif)
+
 
 The Project
 ---
